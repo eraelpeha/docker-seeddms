@@ -1,12 +1,14 @@
 # Information
 
-This is a repository for the DMS seeddms (https://www.seeddms.org). It currently contains only the latest available version, which is not declared as stable (it's a beta-version) and therefore only suited for developer and not for production. Therefore it does not contain a `latest`-tag.
+This is a repository for the DMS seeddms (https://www.seeddms.org). It contains the latest available version 6.0.7.
 
-## Get it running
+## Quickstart
 
-example command to get the container running on port 8080:
+Get the container running on port 8080 with the command:
 
-`docker run --name seeddms -p 8080:80 eraelpeha/seeddms:6.0.7-beta`
+`docker run --name seeddms -p 8080:80 eraelpeha/seeddms`
+
+There is also a docker-compose file if you want to run it with a postgresql-database.
 
 ## Volumes
 
@@ -17,9 +19,8 @@ There are three paths you can mount:
 
 ## Additional information
 
-This is my first approach to get an image running und hub.docker.com. The image is inspired by https://github.com/ludwigprager/docker-seeddms.
+**Contribute**: If you want to contribute to seeddms, you can do it in the official repository maintained by Uwe Steinmann: https://sourceforge.net/projects/seeddms/.
 
-Feel free to add issues to this repo.
+**Inpired**: This image is inspired by https://github.com/ludwigprager/docker-seeddms.
 
-## not yet tested / implemented
-- postgres-support
+**Issues**: Feel free to add issues to the repository on github: https://github.com/eraelpeha/docker-seeddms

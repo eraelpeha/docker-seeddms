@@ -1,0 +1,21 @@
+version: '3'
+services:
+    web:
+        build: .
+        ports:
+            - 8080:80
+        links:
+            - db
+        volumes:
+            - data_volume:/var/www/seeddms/data
+            - conf_volume:/var/www/seeddms/conf
+            - ext_volume:/var/www/seeddms/www/ext
+    db:
+        image: postgres
+        environment:
+            - POSTGRES_PASSWORD=seeddms
+            - POSTGRES_USER=seeddms
+volumes:
+    data_volume:
+    conf_volume:
+    ext_volume:
