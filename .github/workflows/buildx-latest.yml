@@ -1,7 +1,7 @@
 name: Build and Push Dockerhub
 on:
   push:
-    branches: [master]
+    branches: []
     paths-ignore:
       - .github/**
       - README.md
